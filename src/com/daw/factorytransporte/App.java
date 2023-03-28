@@ -20,7 +20,10 @@ public class App {
         int embalajeBicicleta = tipo.tipoEmbalaje(20.0f, 12, 4.7f, 25.0f);
         System.out.println("El tipo de transporte es una bicicleta y el coste es " + costeBicicleta + " y el embalaje es  " + embalajeBicicleta );
 
-
-
+        //Tipo de transporte de barco
+        tipo = FactoriaTransportes.getTransporte(FactoriaTransportes.BARCO);
+        float costeBarco = tipo.costeTotal(36204);
+        int embalajeBarco = tipo.tipoEmbalaje(21.03f, 11, 4.5f, 26.1f);
+        System.out.println("El tipo de transporte es barco y el coste es " + costeBarco + " y el embalaje es  " + embalajeBarco );
     }
 }
