@@ -10,6 +10,8 @@ public class FactoriaTransportes {
     public static final int CAMION = 1;
     public static final int BICICLETA = 2;
 
+    public static final int BARCO = 3;
+
 
 /**
  * método que obtiene el tipo de transporte para un envío, mediante un switch
@@ -22,6 +24,8 @@ public class FactoriaTransportes {
                 return new Camion();
             case BICICLETA:
                 return new Bicicleta();
+            case BARCO:
+                return new Barco();
             default:
                 return null;
         }
